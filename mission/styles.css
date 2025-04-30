@@ -10,6 +10,16 @@ body {
     border: 1px solid grey; /* Border around the body */
 }
 
+body.dark {
+    background-color: #333; /* Dark background for dark mode */
+    color: white; /* White text for dark mode */
+}
+
+/* dark mode contrast */
+body.dark h2 {
+    color: #4FC3F7
+}
+
 /* Header styling */
 h1 {
     text-transform: uppercase;
