@@ -114,6 +114,9 @@ img {
 }
 
 @media (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(3, auto);
+  }
   .nav-links {
     display: flex;
     flex-direction: row;  
