@@ -104,6 +104,8 @@ img {
 }
 
 /* Responsive breakpoints */
+
+/* 700px or greater */
 @media (min-width: 700px) {
   .gallery {
     grid-template-columns: repeat(2, auto);
@@ -113,6 +115,7 @@ img {
   }
 }
 
+/* 1000px or greater */
 @media (min-width: 1000px) {
   .gallery {
     grid-template-columns: repeat(3, auto);

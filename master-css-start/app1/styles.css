@@ -1,0 +1,117 @@
+/* ================================ */
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 1. Selectors & Basic Properties - Hero Section */
+/* ================================ */
+body {
+    background-color: white;
+    color: black;
+    font-family: "Poppins", Times, serif;
+}
+.hero {
+    padding: 100px;
+}
+.hero-title {
+    color: black;
+}
+.hero-msg {
+color: #81da76;
+}
+#hero-highlight{
+    color: #dbfbe0;
+}
+/* ================================ */
+/* 2. Fonts - Features Section */
+/* ================================ */
+.feature {
+    padding: 100px;
+}
+.feature-item {
+    padding: 30px 0;
+}
+.feature-title {
+    font-size: 2rem;
+    font-weight: 500px;
+    text-transform: uppercase;
+    color: #23c93c;
+    margin-bottom: 10px;
+}
+.feature-title-selected {
+    text-decoration: underline;
+}
+.feature-msg {
+}
+/* ================================ */
+/* 3. Colors - Call to Action Section */
+/* ================================ */
+.cta {
+    padding: 100px;
+    background-color: #5bb471;
+    color: white;
+    text-align: center;
+}
+.cta-msg {
+    padding: 15px 0;
+    color: #dbdbdb;
+}
+button {
+    color: none;
+    border: none;
+}
+.cta-button {
+    padding: 10px 20px;
+}
+/* ================================ */
+/* 4. Box Model - Video Section */
+/* ================================ */
+.video {
+    text-align: center;
+    padding: 100px;
+    font-weight: 500;
+}
+.video-title {
+    font-size: 32px;
+    font-weight: 500;
+}
+.video-msg {
+    margin-top: 10px;
+    font-weight: 300;
+    color: #636363;
+}
+.video-controls {
+    margin-top: 20px;
+}
+.video-button {
+    border: 1px solid #5bb471;
+    background: none;
+    padding: 10px 20px;
+}
+.video-button-primary {
+    margin-right: 10px;
+}
+.video-container {
+    margin-top: 20px;
+    background-color: #ccc;
+    width: 100%;
+    height: 500px;
+    box-shadow: 1px 4px 7px 4px rgba(0, 0, 0, 0.33);
+}
+/* ================================ */
+/* 5. Flex - Programs Section */
+/* ================================ */
+
+/* ================================ */
+/* 6. HTML Elements & Images - Form Section */
+/* ================================ */
+
+/* ================================ */
+/* 8. Images and Final Styling */
+/* ================================ */
+
+/* ================================ */
+/* 9. Navbar and Footer Section */
+/* ================================ */
