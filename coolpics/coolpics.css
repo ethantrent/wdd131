@@ -106,6 +106,7 @@ figure {
   display: grid;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-out;
 }
 
 img {
@@ -115,6 +116,11 @@ img {
   display: block;
   margin: 0;
   padding: 0;
+}
+
+figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 /* Hide menu items by default */
 .hide {

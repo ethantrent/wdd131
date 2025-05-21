@@ -1,5 +1,6 @@
 // When the button is clicked show the menu if it is hidden, hide the menu if it is shown. */
 const menuButton = document.querySelector(".menu-btn");
+// toggle menu function
 function toggleMenu() {
     const menu = document.querySelector(".menu")
     menu.classList.toggle("hide");
@@ -32,6 +33,7 @@ gallery.addEventListener('click', (event) => {
   `;
   modal.showModal();
 });
+
 // close modal on click
 modal.addEventListener('click', (event) => {
   if (event.target.classList.contains('close-viewer')) {
@@ -42,6 +44,7 @@ modal.addEventListener('click', (event) => {
     modal.close();
   }
 });
+
 // call handleResize function
 handleResize();
 /* Add an event listener to the menu button to listen for a click event.*/
