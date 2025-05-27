@@ -101,11 +101,110 @@ button {
 /* ================================ */
 /* 5. Flex - Programs Section */
 /* ================================ */
-
+.programs {
+    padding: 100px;
+    background-color: #eee;
+    padding-bottom: 200px;
+}
+.programs-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+.programs-card {
+    background-color: #b5b5b5;
+    padding: 30px;
+    width: 30%;
+    height: 400px;
+}
 /* ================================ */
 /* 6. HTML Elements & Images - Form Section */
 /* ================================ */
-
+.element {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    gap: 60px;
+    background-color: #f8f9fa;
+}
+.element-left {
+    flex: 1;
+}
+.element-right {
+    flex: 1;
+}
+.element-subtitle{
+    color: #5d5d5d;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.element-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.element-placeholder {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+.element-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.element-list-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #5d5d5d;
+}
+.element-list-item::before {
+    content: "→";
+    margin-right: 10px;
+    color: #34c759;
+}
+.element-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.element-form-group label {
+    color: #333;
+    font-weight: 500;
+}
+.element-form-group input, 
+.element-form-group select{
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-family: inherit;
+}
+.element-form-group input:focus, 
+.element-form-group select:focus{
+    outline: none;
+    border-color: #34c759;
+    box-shadow: 0 0 0 2px rgba(52, 199, 89, 0.2);
+}
+.element-form-group select {
+    cursor: pointer;
+    background-color: white;
+}
+.element-form-group option {
+    padding: 8px;
+}
+.element-button {
+    background-color: #34c759;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+.element-button:hover {
+    background-color: #2db14e;
+}
 /* ================================ */
 /* 8. Images and Final Styling */
 /* ================================ */
