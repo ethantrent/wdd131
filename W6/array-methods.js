@@ -1,13 +1,8 @@
-// let new_array = arr.map(function callback( currentValue[, index[, array]]) {
-//     // return element for new_array
-// }[, thisArg])
-
 // ACTIVITY 1
 
 const steps = ["one", "two", "three"];
-const listTemplate = (step) => {
-  return '<li>${step}<li/>' //the html string made from step
-}
+const listTemplate = ((step) => `<li>${step}</li>`); //the html string made from step
+
 const stepsHtml = steps.map(listTemplate); // use map to convert the list from strings to HTML
 document.querySelector("#myList").innerHTML = stepsHtml.join(''); // set the innerHTML
 
@@ -30,17 +25,12 @@ const letterToPoints = (letterGrades) => {
 }
 
 // Use map and our conversion function to convert the array in step 1 to gpa points.
-const gpaPoints = letterGrades.map(letterToPoints);
+const gpaPoints = letterGrades.map(letterToPoints); // 4.0, 3.0, 4.0
 
 // ACTIVITY 3
 
-// Using the function from the previous activity, convert an array of grades into an array of gpaPoints.
-const gpasPoints = letterGrades.map(letterToPoints);
-
 // Using reduce calculate the GPA from the array of gpaPoints.
-const pointsTotal = gpaPoints.reduce(function (total, item) {
-  return total + item;
-});
+const pointsTotal = gpaPoints.reduce((total, item) => total + item);
 const gpa = pointsTotal / gpaPoints.length;
 
 // ACTIVITY 4
@@ -50,9 +40,7 @@ const fruits = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
 
 // Using filter keep only the fruits that are smaller than 6 characters.
 
-const sixChar = fruits.filter(function (fruit) {
-    return fruit.length < 6;
-});
+const sixChar = fruits.filter((fruit) => fruit.length < 6);
 
 // ACTIVITY 5
 
