@@ -47,6 +47,7 @@ h1, h2 {
 
 h1 {
     margin: 40px 0;
+    color: var(--text);
 }
 
 /* navigation */
@@ -92,16 +93,18 @@ article {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 20px;
-    align-items: start;
+    align-items: stretch;
 }
 .article-details {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 20px;
-    border-right: 2px solid var(--accent-color);
     align-content: start;
     gap: 15px;
     text-align: right;
+    border-right: 2px solid var(--accent-color);
+    padding-right: 20px;
+    height: 100%;
 }
 .article-content {
     display: grid;
