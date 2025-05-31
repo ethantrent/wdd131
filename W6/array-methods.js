@@ -4,7 +4,7 @@ const steps = ["one", "two", "three"];
 const listTemplate = ((step) => `<li>${step}</li>`); //the html string made from step
 
 const stepsHtml = steps.map(listTemplate); // use map to convert the list from strings to HTML
-document.querySelector("#myList").innerHTML = stepsHtml.join(''); // set the innerHTML
+document.querySelector("#myList").innerHTML = stepsHtml.join(''); // append the new list items
 
 // ACTIVITY 2
 
@@ -12,13 +12,12 @@ document.querySelector("#myList").innerHTML = stepsHtml.join(''); // set the inn
 const letterGrades = ['A', 'B', 'A'];
 
 // Write a function that will take one letter grade, and return the appropriate gpa points for that grade.
-
-const letterToPoints = (letterGrades) => {
+const letterToPoints = (letterGrade) => {
     let points = 0;
-    if (letterGrades === 'A') {
+    if (letterGrade === 'A') {
         points = 4;
     }
-    else if (letterGrades === 'B') {
+    else if (letterGrade === 'B') {
         points = 3;
     }
     return points;
@@ -30,8 +29,8 @@ const gpaPoints = letterGrades.map(letterToPoints); // 4.0, 3.0, 4.0
 // ACTIVITY 3
 
 // Using reduce calculate the GPA from the array of gpaPoints.
-const pointsTotal = gpaPoints.reduce((total, item) => total + item);
-const gpa = pointsTotal / gpaPoints.length;
+const totalPoints = gpaPoints.reduce((accumulator, point) => accumulator + point);
+const gpa = totalPoints / gpaPoints.length;
 
 // ACTIVITY 4
 
@@ -39,7 +38,6 @@ const gpa = pointsTotal / gpaPoints.length;
 const fruits = ['watermelon', 'peach', 'apple', 'tomato', 'grape'];
 
 // Using filter keep only the fruits that are smaller than 6 characters.
-
 const sixChar = fruits.filter((fruit) => fruit.length < 6);
 
 // ACTIVITY 5
@@ -51,5 +49,5 @@ const numbers = [12, 34, 21, 54];
 const luckyNumber = 22;
 
 // Use indexOf to see if the luckyNumber is in the Array.
-let luckyIndex = numbers.indexOf(luckyNumber);
+let luckyIndex = numbers.indexOf(luckyNumber); // this checks if the number is in the array
 
