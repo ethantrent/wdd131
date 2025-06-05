@@ -64,15 +64,17 @@
         </div>
         <div class="card-back">
           <div class="magnetic-strip"></div>
-          <label for="cvc">CVC/CVV</label>
-          <input
-            type="text"
-            name="cvc"
-            id="cvc"
-            placeholder="xxx"
-            maxlength="3"
-            required
-          />
+          <div class="cvv-container">
+            <label for="cvc">CVC/CVV</label>
+            <input
+              type="text"
+              name="cvc"
+              id="cvc"
+              placeholder="xxx"
+              maxlength="3"
+              required
+            />
+          </div>
         </div>
       </div>
       <button type="submit" class="submit">Submit</button>

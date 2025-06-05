@@ -11,11 +11,12 @@ form {
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
     gap: 1rem;
     position: relative;
     z-index: 2;
+    grid-area: 1 / 1;
 }
 
 .card-header {
@@ -40,7 +41,6 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    align-items: start;
 }
 
 .card-holder {
@@ -75,23 +75,22 @@ input {
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
     position: absolute;
     top: 15%;
-    right: -130px;
+    right: -150px;
     width: 100%;
     height: 75%;
     z-index: 1;
+    grid-area: 1 / 1;
 }
 
 .magnetic-strip {
     background-color: #000;
     height: 40px;
     width: 80%;
-    margin-bottom: auto;
     border-radius: 4px;
     position: absolute;
     top: 20px;
@@ -99,34 +98,54 @@ input {
     overflow: hidden;
 }
 
+.cvv-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 0.5rem;
+    justify-items: end;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
 .card-back label {
     color: #333;
     font-size: 0.9rem;
-    margin-bottom: 0.5rem;
     display: block;
-    text-align: left;
+    text-align: right;
     width: 80px;
 }
 
 .card-back input {
     width: 60px;
-    padding: 0.5rem;
+    padding: 0.3rem;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: center;
+    height: 30px;
 }
 
 .submit {
     background: #4CAF50;
     color: white;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1.1rem;
-    margin-top: 80px;
+    font-size: 1rem;
     width: 120px;
+    margin-top: 20px;
     justify-self: center;
 }
 
@@ -145,11 +164,4 @@ input {
 
 .errorMsg:not(:empty) {
     display: block;
-}
-
-.card-container {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    margin: 20px 0;
 }
