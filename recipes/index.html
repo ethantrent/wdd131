@@ -10,7 +10,7 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="A collection of delicious recipes.">
     <meta property="og:image" content="images/taco-soup.jpeg">
-    <meta property="og:url" content=""> <!-- TODO: Update page URL -->
+    <meta property="og:url" content="">
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="images/recipe-book.png" type="image/png">
@@ -23,24 +23,12 @@
         <h1>Recipe Book</h1>
     </header>
     <main>
-        <form class="search-form">
-            <input type="text" placeholder="Search for recipes...">
-            <button type="submit">Search</button>
+        <form class="search-form" id="search-form">
+            <input id="search-input" type="text" placeholder="Search for recipes..." aria-label="Search for recipes">
+            <button id="search-btn" type="submit">Search</button>
         </form>
 
-        <section class="recipes">
-            <article class="recipe-card">
-                <img src="images/taco-soup.jpeg" alt="Taco Soup">
-                <h2>Taco Soup</h2>
-                <p class="description">A hearty and flavorful soup with all the fixings of a taco.</p>
-                <div class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </div>
-            </article>
+        <section class="recipes" id="recipes">
         </section>
     </main>
     <footer>
